@@ -1,5 +1,4 @@
 class Customer
-
   attr_accessor :first_name
   attr_accessor :last_name
   attr_accessor :title
@@ -12,5 +11,4 @@ class Customer
   def address_summary
     @house + ", " + @street + ", " + @city + ", " + @post_code + ", " + @country
   end
-
 end
