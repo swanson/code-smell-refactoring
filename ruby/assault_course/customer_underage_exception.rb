@@ -1,0 +1,3 @@
+class CustomerUnderageException < Exception
+
+end
