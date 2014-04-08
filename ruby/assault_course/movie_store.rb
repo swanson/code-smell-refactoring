@@ -1,7 +1,10 @@
 class MovieStore
 
-  def initialize
+  attr_reader :name
+
+  def initialize(name)
     @movies = {}
+    @name = name
   end
 
   def has_movie?(title)

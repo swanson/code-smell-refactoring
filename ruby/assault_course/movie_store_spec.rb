@@ -8,7 +8,7 @@ require "./rating"
 
 describe MovieStore do
   before do
-    @store = MovieStore.new
+    @store = MovieStore.new("Blockbuster")
   end
 
   it 'allows rental of available movies' do
