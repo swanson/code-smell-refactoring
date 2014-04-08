@@ -6,12 +6,15 @@ require "./customer"
 
 describe Customer do
   before do
+    address = Address.new
+    address.house = "43"
+    address.street = "Rankin Road"
+    address.city = "London"
+    address.post_code = "SW23 9YY"
+    address.country = "United Kingdom"
+
     @customer = Customer.new
-    @customer.house = "43"
-    @customer.street = "Rankin Road"
-    @customer.city = "London"
-    @customer.post_code = "SW23 9YY"
-    @customer.country = "United Kingdom"
+    @customer.address = address
   end
 
   describe '.address_summary' do
