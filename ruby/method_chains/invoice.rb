@@ -19,7 +19,7 @@ class Invoice
       total += item.subtotal
     end
 
-    if @customer.address.country.is_outside_america?
+    if @customer.is_overseas?
       total += OVERSEAS_SHIPPING_RATE
     end
 

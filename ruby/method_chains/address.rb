@@ -4,4 +4,8 @@ class Address
   def initialize(country)
     @country = country
   end
+
+  def is_outside_america?
+    @country.is_outside_america?
+  end
 end
