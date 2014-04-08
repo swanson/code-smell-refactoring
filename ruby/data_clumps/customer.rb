@@ -5,8 +5,7 @@ class Customer
   attr_accessor :address
 
   def address_summary
-    @address.house + ", " + @address.street + ", " + @address.city + 
-      ", " + @address.post_code + ", " + @address.country
+    @address.summary
   end
 end
 
@@ -16,4 +15,8 @@ class Address
   attr_accessor :city
   attr_accessor :post_code
   attr_accessor :country
+
+  def summary
+    house + ", " + street + ", " + city + ", " + post_code + ", " + country
+  end
 end
