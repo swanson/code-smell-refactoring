@@ -18,12 +18,17 @@ describe Account do
       @account.balance.must_equal 50
     end
 
-    it 'should record the transaction' do
+    it 'should record the transactions' do
       @account.credit(100)
+      last_transaction = @account.last_transaction
+      last_transaction.amount.must_equal 100
+      last_transaction.is_debit.must_equal false
+
       @account.debit(50)
 
       last_transaction = @account.last_transaction
       last_transaction.amount.must_equal -50
+      last_transaction.is_debit.must_equal true
     end
 
     it 'should update last debit date' do

@@ -10,7 +10,7 @@ class Account
 
   def credit(amount)
     @balance += amount
-    @transactions << Transaction.new(true, amount)
+    @transactions << Transaction.new(false, amount)
     @last_transaction_date = Date.today
   end
 
