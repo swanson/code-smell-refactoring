@@ -8,15 +8,40 @@
 * A human intuition that it might be time to cleanup your codebase
 * Patterns that indicate their could be trouble
 
+
+
+
+
+
+
+
 ## Are they always a problem?
 
 * No! Think of them as guidelines rather than rules
 * Not every problem is as clear cut as our examples will show
 
+
+
+
+
+
+
+
+
+
+
 ## How can I fix them?
 
 * Refactoring: change code WITHOUT CHANGING BEHAVIOR
 * A set of patterns that you can apply systematically
+
+
+
+
+
+
+
+
 
 ---
 
