@@ -9,11 +9,11 @@ class Account
   end
 
   def credit(amount)
-    record_transaction(amount)
+    record_transaction(amount, false)
   end
 
   def debit(amount)
-    record_transaction(-amount)
+    record_transaction(-amount, true)
   end
 
   def last_transaction
@@ -21,9 +21,9 @@ class Account
   end
 
   private
-    def record_transaction(amount)
+    def record_transaction(amount, is_debit)
       @balance += amount
-      @transactions << Transaction.new(true, amount)
+      @transactions << Transaction.new(is_debit, amount)
       @last_transaction_date = Date.today
     end
 

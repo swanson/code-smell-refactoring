@@ -25,7 +25,6 @@ describe Account do
       last_transaction.is_debit.must_equal false
 
       @account.debit(50)
-
       last_transaction = @account.last_transaction
       last_transaction.amount.must_equal -50
       last_transaction.is_debit.must_equal true
