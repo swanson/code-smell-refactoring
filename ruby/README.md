@@ -6,7 +6,7 @@
 
 * Ever had a smelly fridge?
 * A human intuition that it might be time to cleanup your codebase
-* Patterns that indicate their could be trouble
+* Patterns that indicate there could be trouble
 
 
 
